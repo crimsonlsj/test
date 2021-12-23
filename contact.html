@@ -161,7 +161,7 @@
                 <textarea name="contents" id="editor1" rows="10" cols="80" >
                   <p>문서 또는 용량이 큰 파일은 이메일로 보내주세요...</p>
                 </textarea>  
-                <button type="submit">send message</button>
+                <button type="button" id="submit_btn">send message</button>
               </form>
             </div>  
           </div>
@@ -206,6 +206,23 @@
         $('header').removeClass('active')
       }
     }) 
+
+    $("#submit_btn").click(function () {
+            $.ajax({
+                url: "http://13.125.208.237:3000",
+                method: "POST",
+                data: {
+                    title: "견적서",
+                    category: "50~100",
+                    contents: $('textarea[name=contents]').val()
+                },
+                dataType: "json",
+                success: function (data) {
+                    console.log(data);
+                    alert(data);
+            }
+        })
+    });
   </script>
   
 </body>
