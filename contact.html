@@ -157,8 +157,10 @@
                   placeholder="프로젝트 제목을 입력해 주세요.">
                 <label>Message <span>*</span></label>
               </form>
-              <form class="editor" action="http://13.125.208.237:3000" method="post">
+              <form class="editor">
+                <input type="text" name="content" >
                 <textarea name="contents" id="editor1" rows="10" cols="80" >
+                  <p>문서 또는 용량이 큰 파일은 이메일로 보내주세요...</p>
                 </textarea>  
                 <button type="button" id="submit_btn">send message</button>
               </form>
