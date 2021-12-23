@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Make production">
+    <title>Make production</title>
+    <link rel="icon" href="images/favicon.png">
+    <!-- Menu overlay js -->
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- Page Scroll Effects JS & CSS -->
+    <script src="js/velocity/velocity.min.js"></script>
+    <script src="js/velocity/velocity.ui.min.js"></script>
+    <script src="js/velocity/main.js"></script>
+    <link rel="stylesheet" href="js/velocity/velocity.css">
+    <!-- Slick.js -->
+    <link rel="stylesheet" href="js/slick/slick-theme.css">
+    <link rel="stylesheet" href="js/slick/slick.css">
+    <!-- Featherlight.js -->
+    <link rel="stylesheet" href="js/featherlight/featherlight.css">
+    <!-- Style & Responsive -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- CKEditor CDN -->
+    <script src="js/CKEditor.js"></script>
+    <!-- Twentytwenty & Foundation CSS -->
+    <link href="css/foundation.css" rel="stylesheet" type="text/css"/>
+    <link href="css/twentytwenty.css" rel="stylesheet" type="text/css"/>
+</head>
+<!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
+<body data-hijacking="on" data-animation="scaleDown">
+  <div class="container">
+    <header>
+      <div class="gnb-inner">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="Return to the index page"></a>
+        </div>
+        <a href="#" class="hamburger-button">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <div class="overlay">
+          <nav class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>  
+    </header>
+    <!-- .cd-vertical-nav -->
+    <nav>
+      <ul class="cd-vertical-nav">
+        <li><a href="#0" class="cd-prev inactive"></a></li>
+        <li><a href="#0" class="cd-next"></a></li>
+      </ul>
+    </nav>
+    <div class="cd-section visible" id="about">
+      <div>
+        <div class="content">
+          <div class="home-inner">
+            <h3 class="about-text">About <span> <br> <img src="images/home-logo.png" alt=""></span></h3>
+            <div class="about-opacity-image"></div>
+            <div class="about-heading">
+              <span>사이트 준비 중 입니다.
+                  <br>이용에 불편을 드려 죄송합니다.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <!-- client-list
+    <div class="cd-section">
+      <div class="client-list">
+        <ul class="mylist1"> ---- 나중에 추가할 예정입니다. ----
+          <li><img src="images/about-logo1.png" alt=""></li>
+          <li><img src="images/about-logo2.png" alt=""></li>
+          <li><img src="images/about-logo3.png" alt=""></li>
+          <li><img src="images/about-logo1.png" alt=""></li>
+          <li><img src="images/about-logo2.png" alt=""></li>
+          <li><img src="images/about-logo3.png" alt=""></li>
+          <li><img src="images/about-logo1.png" alt=""></li>
+          <li><img src="images/about-logo2.png" alt=""></li>
+          <li><img src="images/about-logo3.png" alt=""></li>
+          <li><img src="images/about-logo1.png" alt=""></li>
+          <li><img src="images/about-logo2.png" alt=""></li>
+          <li><img src="images/about-logo3.png" alt=""></li>
+          <li><img src="images/about-logo1.png" alt=""></li>
+          <li><img src="images/about-logo2.png" alt=""></li>
+          <li><img src="images/about-logo3.png" alt=""></li>
+          <li><img src="images/about-logo1.png" alt=""></li>
+          <li><img src="images/about-logo2.png" alt=""></li>
+          <li><img src="images/about-logo3.png" alt=""></li>
+        </ul>
+      </div>
+    </div>
+    -->
+    <!-- footer -->
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="row">
+          <div class="footer">
+            <ul>
+              <li><a href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0" target="_blank">Blog</a></li>
+              <li><a href="https://www.instagram.com/makeproduction_2021/" target="_blank">Instagram</a></li>
+              <li><a href="https://www.youtube.com/channel/UCs_Xcf4ZZ80Y6NsAYLBDrAQ" target="_blank">Youtube</a></li>
+            </ul>
+            <p>
+              &copy;
+              <a href="index.html">Make production </a>All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Channel Plugin Scripts -->
+      <script>
+        (function() {
+          var w = window;
+          if (w.ChannelIO) {
+            return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+          }
+          var ch = function() {
+            ch.c(arguments);
+          };
+          ch.q = [];
+          ch.c = function(args) {
+            ch.q.push(args);
+          };
+          w.ChannelIO = ch;
+          function l() {
+            if (w.ChannelIOInitialized) {
+              return;
+            }
+            w.ChannelIOInitialized = true;
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+            s.charset = 'UTF-8';
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+          }
+          if (document.readyState === 'complete') {
+            l();
+          } else if (window.attachEvent) {
+            window.attachEvent('onload', l);
+          } else {
+            window.addEventListener('DOMContentLoaded', l, false);
+            window.addEventListener('load', l, false);
+          }
+        })();
+        ChannelIO('boot', {
+          "pluginKey": "f2237256-171d-4beb-9aaa-4ad5cedcb113"
+        });
+      </script>
+    <!-- End Channel Plugin -->
+    </footer>
+  </div>
+  <script src="js/jquery.event.move.js"></script>
+  <script src="js/jquery.twentytwenty.js"></script>
+  <script>
+    $(function() {
+      $('.hamburger-button').on('click', function(event){
+        event.preventDefault();
+      
+      $(this).toggleClass('active');
+      $('.overlay').toggleClass('visible');
+      });
+    });
+      // Change CSS with Scroll
+      $(window).scroll(function(){
+      if($(window).scrollTop() > 50) {
+        $('header').addClass('active')
+      }
+      else {
+        $('header').removeClass('active')
+      }
+    })
+  </script>
+  <!-- Smooth Scrolling -->
+  <script src="js/jquery.scrollTo.min.js"></script>
+  <!-- Featherlight.js -->
+  <script src="js/featherlight/featherlight.js"></script>
+  <script src="js/slick/slick.min.js"></script>
+</body>
+</html>

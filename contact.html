@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Make production">
+    <title>Make production</title>
+    <link rel="icon" href="images/favicon.png">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- Page Scroll Effects JS & CSS -->
+    <script src="js/velocity/velocity.min.js"></script>
+    <script src="js/velocity/velocity.ui.min.js"></script>
+    <script src="js/velocity/main.js"></script>
+    <link rel="stylesheet" href="js/velocity/velocity.css">
+    <!-- Smooth Scrolling -->
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <!-- Slick.js -->
+    <script src="js/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="js/slick/slick-theme.css">
+    <link rel="stylesheet" href="js/slick/slick.css">
+    <!-- Featherlight.js -->
+    <script src="js/featherlight/featherlight.js"></script>
+    <link rel="stylesheet" href="js/featherlight/featherlight.css">
+    <!-- Custom JS & CSS -->
+    <script src="js/custom.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- CKEditor CDN -->
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+</head>
+<!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
+<body data-hijacking="off" data-animation="none">
+  <div class="container">  
+    <header>
+      <div class="gnb-inner">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="Return to the index page"></a>
+        </div>
+        <a href="#" class="hamburger-button">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <div class="overlay">
+          <nav class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div> 
+      </div>  
+    </header>
+    <div class="cd-section visible" id="contact">
+      <div class="content">
+        <div class="home-inner">
+          <h3 class="welcome-text">Contact <span> <br> <img src="images/home-logo.png" alt=""></span></h3>
+          <div class="contact-heading">
+            <span>Creative</span>
+            <span>Architecture</span>
+            <span>Specialists</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cd-section" id="contact">
+      <div class="contact">
+        <div class="contact-inner">
+          <div class="contact-feature">
+            <div class="contact-form">
+              <h3><b>Contact</b></h3>
+              <p></p>
+              <form class="send-box1">
+                <div class="client-info">
+                  <h3>고객 정보</h3>
+                </div>
+                  <label>Client <span>*</span></label>
+                  <input type="text" id="client" placeholder="회사명 또는 성함을 입력해 주세요.">
+                  <label>Phone <span>*</span></label>
+                  <input type="text" id="phone" placeholder="연락처를 입력해 주세요.">    
+                  <label>Email <span>*</span></label>
+                  <input type="email" id="email" placeholder="메일 주소를 입력해 주세요.">
+              </form>
+              <form class="send-box2">
+                <div class="project-info">
+                  <h3>프로젝트 정보</h3>
+                </div>
+                <div class="project-type">
+                  <ul>
+                    <li>
+                        <label><input type="checkbox" class="video" > 브랜드 영상
+                        </label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox" class="video" > 기업 홍보 영상
+                        </label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox" class="video" > 바이럴 영상
+                        </label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox" class="video" > 현장 스케치 영상
+                        </label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox" class="video" > 제품 및 서비스 홍보 영상
+                        </label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox" class="video" > 행사 오프닝 영상
+                        </label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox" class="video" > 패션 필름
+                        </label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox" class="video" > 애니메이션 영상
+                        </label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox" class="web" > 홈페이지 제작
+                        </label>
+                    </li>
+                  </ul>
+                </div>
+              </form>
+              <form class="send-box3"> 
+                <div class="project-content">
+                    <h3>상세 문의 내용</h3>
+                </div>
+                <div class="project-budget">
+                  <label>제작 예산 <span>*</span></label>
+                </div>
+                <select class="select-budget">
+                  <option value="10 ~ 100 만원 이하">10 ~ 100 만원 이하</option>
+                  <option value="100 ~ 300 만원 이하">100 ~ 300 만원 이하</option>
+                  <option value="300 ~ 500 만원 이하">300 ~ 500 만원 이하</option>
+                  <option value="500 ~ 1000 만원 이하">500 ~ 1000 만원 이하</option>
+                  <option value="1000 ~ 2000 만원 이하">1000 ~ 2000 만원 이하</option>
+                  <option value="2000 ~ 3000 만원 이하">2000 ~ 3000 만원 이하</option>
+                  <option value="3000 ~ 5000 만원 이하">3000 ~ 5000 만원 이하</option>
+                  <option value="5000 만원 이상">5000 만원 이상</option>
+                </select>
+                <label>Subject <span>*</span></label>
+                <input type="text" id="text"
+                  placeholder="프로젝트 제목을 입력해 주세요.">
+                <label>Message <span>*</span></label>
+              </form>
+              <form class="editor">
+                <textarea name="editor1" id="editor1" rows="10" cols="80" >
+                  <p>문서 또는 용량이 큰 파일은 이메일로 보내주세요.</p>
+                </textarea>  
+                <button type="button">send message</button>
+              </form>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="row">
+          <div class="footer">
+            <ul>
+              <li><a href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0" target="_blank">Blog</a></li>
+              <li><a href="https://www.instagram.com/makeproduction_2021/" target="_blank">Instagram</a></li>
+              <li><a href="https://www.youtube.com/channel/UCs_Xcf4ZZ80Y6NsAYLBDrAQ" target="_blank">Youtube</a></li>
+            </ul>
+            <p>
+              &copy;
+              <a href="index.html">Make production </a>All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    CKEDITOR.replace( 'editor1' );
+    $(function() {
+      $('.hamburger-button').on('click', function(event){
+        event.preventDefault();
+      
+      $(this).toggleClass('active');
+      $('.overlay').toggleClass('visible');
+      });
+    });
+      // Change CSS with Scroll
+    $(window).scroll(function(){
+      if($(window).scrollTop() > 50) {
+        $('header').addClass('active')
+      }
+      else {
+        $('header').removeClass('active')
+      }
+    }) 
+  </script>
+  
+</body>
+</html>
